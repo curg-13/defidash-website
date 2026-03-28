@@ -13,14 +13,14 @@ export const Hero: React.FC = () => {
           </div>
           
           <h1 className="text-5xl md:text-7xl font-bold tracking-tight leading-[1.1] text-white">
-            Smart Portfolio <br />
+            Leverage Lending <br />
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-zinc-200 to-zinc-500">
-              Dashboard & Tooling.
+              Aggregator on Sui.
             </span>
           </h1>
-          
+
           <p className="text-lg md:text-xl text-zinc-400 max-w-lg leading-relaxed">
-            A <strong>DeFi Saver-like toolkit</strong> for Sui. Abstract complex multi-protocol interactions into simple atomic function calls. Manage your positions with ease.
+            <strong>Flash Loan + PTB</strong> powered one-click leverage positions. Compare rates across Suilend, Navi, and Scallop to find the optimal route automatically.
           </p>
 
           <div className="flex flex-col sm:flex-row gap-4 pt-4">

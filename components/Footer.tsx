@@ -7,9 +7,9 @@ export const Footer: React.FC = () => (
         <span className="font-bold text-zinc-200">CURG'13</span> © {new Date().getFullYear()}. All rights reserved.
       </div>
       <div className="flex space-x-6">
-        <a href="#" className="hover:text-zinc-200 transition-colors">Github</a>
-        <a href="#" className="hover:text-zinc-200 transition-colors">Documentation</a>
-        <a href="#" className="hover:text-zinc-200 transition-colors">Twitter</a>
+        <a href="https://github.com/curg-13" target="_blank" rel="noopener noreferrer" className="hover:text-zinc-200 transition-colors">Github</a>
+        <a href="https://x.com/defidashteam" target="_blank" rel="noopener noreferrer" className="hover:text-zinc-200 transition-colors">Twitter</a>
+        <a href="https://defi-dash-curg.vercel.app/strategy" target="_blank" rel="noopener noreferrer" className="hover:text-zinc-200 transition-colors">Dashboard</a>
       </div>
     </div>
   </footer>

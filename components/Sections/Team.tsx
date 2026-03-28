@@ -1,36 +1,40 @@
 import React from 'react';
 import { Card } from '../ui/Card';
-import { Github, Twitter, Linkedin } from 'lucide-react';
+import { Github } from 'lucide-react';
 import { TeamMember } from '../../types';
 
 const members: TeamMember[] = [
   {
     id: '1',
-    name: 'Jeff Lee',
-    role: 'Lead Architect',
-    bio: 'Core logic design & PTB composition strategist.',
-    imageUrl: 'https://picsum.photos/200/200?random=1'
+    name: 'Jeongseup',
+    role: 'Project Lead & Engineer',
+    bio: 'SDK - Suilend integration & protocol architecture.',
+    imageUrl: '/avatar-jeongseup.png',
+    github: 'https://github.com/Jeongseup'
   },
   {
     id: '2',
-    name: 'Sarah Chen',
-    role: 'Smart Contract Engineer',
-    bio: 'Sui Move expert. Security & Flashloan implementations.',
-    imageUrl: 'https://picsum.photos/200/200?random=2'
+    name: 'WON',
+    role: 'Software Engineer',
+    bio: 'SDK - Scallop integration development.',
+    imageUrl: '/avatar-wsong.jpeg',
+    github: 'https://github.com/wsong0101'
   },
   {
     id: '3',
-    name: 'Alex Kim',
-    role: 'Frontend Engineer',
-    bio: 'UI/UX Lead. Building intuitive interfaces for complex DeFi.',
-    imageUrl: 'https://picsum.photos/200/200?random=3'
+    name: 'Harvey',
+    role: 'Software Engineer',
+    bio: 'Frontend & UI/UX development.',
+    imageUrl: '/avatar-jshan.png',
+    github: 'https://github.com/JSHan94'
   },
   {
     id: '4',
-    name: 'David Park',
-    role: 'Quantitative Analyst',
-    bio: 'Risk modeling and liquidation parameter optimization.',
-    imageUrl: 'https://picsum.photos/200/200?random=4'
+    name: 'Pluto',
+    role: 'Software Engineer',
+    bio: 'SDK - Navi integration development.',
+    imageUrl: '/avatar-pluto.jpeg',
+    github: 'https://github.com/plutohan'
   }
 ];
 
@@ -64,9 +68,11 @@ export const Team: React.FC = () => {
                 <p className="text-sm text-zinc-500 leading-snug mb-4">{member.bio}</p>
                 
                 <div className="flex space-x-3 text-zinc-500">
-                    <Github className="w-4 h-4 hover:text-white cursor-pointer transition-colors" />
-                    <Twitter className="w-4 h-4 hover:text-white cursor-pointer transition-colors" />
-                    <Linkedin className="w-4 h-4 hover:text-white cursor-pointer transition-colors" />
+                    {member.github && (
+                      <a href={member.github} target="_blank" rel="noopener noreferrer">
+                        <Github className="w-4 h-4 hover:text-white cursor-pointer transition-colors" />
+                      </a>
+                    )}
                 </div>
               </div>
             </Card>

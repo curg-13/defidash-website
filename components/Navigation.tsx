@@ -26,10 +26,7 @@ export const Navigation: React.FC = () => {
     <nav className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 border-b ${isScrolled ? 'bg-background/80 backdrop-blur-md border-border' : 'bg-transparent border-transparent'}`}>
       <div className="max-w-7xl mx-auto px-6 h-16 flex items-center justify-between">
         {/* Logo */}
-        <div className="flex items-center space-x-2 cursor-pointer" onClick={() => scrollToSection('hero')}>
-          <div className="w-8 h-8 bg-white text-black flex items-center justify-center font-bold rounded-sm">
-            C
-          </div>
+        <div className="flex items-center cursor-pointer" onClick={() => scrollToSection('hero')}>
           <span className="font-bold text-lg tracking-tight">CURG'13</span>
         </div>
 

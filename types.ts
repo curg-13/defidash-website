@@ -6,6 +6,7 @@ export interface TeamMember {
   role: string;
   bio: string;
   imageUrl: string;
+  github?: string;
 }
 
 export interface FeatureItem {
