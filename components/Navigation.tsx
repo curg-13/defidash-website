@@ -26,21 +26,23 @@ export const Navigation: React.FC = () => {
     <nav className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 border-b ${isScrolled ? 'bg-background/80 backdrop-blur-md border-border' : 'bg-transparent border-transparent'}`}>
       <div className="max-w-7xl mx-auto px-6 h-16 flex items-center justify-between">
         {/* Logo */}
-        <div className="flex items-center cursor-pointer" onClick={() => scrollToSection('hero')}>
-          <span className="font-bold text-lg tracking-tight">CURG'13</span>
+        <div className="flex items-center gap-2 cursor-pointer" onClick={() => scrollToSection('hero')}>
+          <img src="/defidash-favicon.png" alt="DefiDash" className="w-8 h-8 rounded-md" />
+          <span className="font-bold text-lg tracking-tight">DefiDash Team</span>
         </div>
 
         {/* Desktop Links */}
         <div className="hidden md:flex items-center space-x-8 text-sm font-medium text-muted-foreground">
-          <button onClick={() => scrollToSection('protocol')} className="hover:text-foreground transition-colors">Protocol</button>
-          <button onClick={() => scrollToSection('features')} className="hover:text-foreground transition-colors">Architecture</button>
+          <button onClick={() => scrollToSection('protocol')} className="hover:text-foreground transition-colors">How It Works</button>
+          <button onClick={() => scrollToSection('features')} className="hover:text-foreground transition-colors">SDK</button>
+          <button onClick={() => scrollToSection('roadmap')} className="hover:text-foreground transition-colors">Roadmap</button>
           <button onClick={() => scrollToSection('team')} className="hover:text-foreground transition-colors">Team</button>
         </div>
 
         {/* CTA */}
         <div className="hidden md:flex items-center space-x-4">
             <a 
-              href="https://defi-dash-curg.vercel.app/strategy" 
+              href="https://defidash-frontend.vercel.app/" 
               target="_blank" 
               rel="noopener noreferrer"
             >
@@ -62,10 +64,11 @@ export const Navigation: React.FC = () => {
       {/* Mobile Menu */}
       {mobileMenuOpen && (
         <div className="md:hidden absolute top-16 left-0 right-0 bg-background border-b border-border p-6 flex flex-col space-y-4">
-           <button onClick={() => scrollToSection('protocol')} className="text-left py-2 font-medium">Protocol</button>
-           <button onClick={() => scrollToSection('features')} className="text-left py-2 font-medium">Architecture</button>
+           <button onClick={() => scrollToSection('protocol')} className="text-left py-2 font-medium">How It Works</button>
+           <button onClick={() => scrollToSection('features')} className="text-left py-2 font-medium">SDK</button>
+           <button onClick={() => scrollToSection('roadmap')} className="text-left py-2 font-medium">Roadmap</button>
            <button onClick={() => scrollToSection('team')} className="text-left py-2 font-medium">Team</button>
-           <a href="https://defi-dash-curg.vercel.app/strategy" target="_blank" rel="noopener noreferrer" className="w-full">
+           <a href="https://defidash-frontend.vercel.app/" target="_blank" rel="noopener noreferrer" className="w-full">
             <Button className="w-full">Launch App</Button>
            </a>
         </div>

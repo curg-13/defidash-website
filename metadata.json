@@ -1,5 +1,5 @@
 {
-  "name": "CURG'13 - DefiDash SDK",
-  "description": "DefiDash SDK by CURG'13: A DeFi Saver-like toolkit for Sui. Manage portfolios and execute atomic leverage strategies.",
+  "name": "DefiDash Team",
+  "description": "DefiDash: Leverage Lending Aggregator on Sui. Flash Loan + PTB powered one-click leverage positions.",
   "requestFramePermissions": []
 }

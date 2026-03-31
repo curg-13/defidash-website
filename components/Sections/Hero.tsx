@@ -9,29 +9,31 @@ export const Hero: React.FC = () => {
         <div className="space-y-8">
           <div className="inline-flex items-center rounded-full border border-zinc-800 bg-zinc-900/50 px-3 py-1 text-sm text-zinc-400 backdrop-blur-sm">
             <span className="flex h-2 w-2 rounded-full bg-green-500 mr-2 animate-pulse"></span>
-            DefiDash SDK Live on Devnet
+            Live on Sui Mainnet
           </div>
-          
+
           <h1 className="text-5xl md:text-7xl font-bold tracking-tight leading-[1.1] text-white">
-            Leverage Lending <br />
+            One-Click <br />
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-zinc-200 to-zinc-500">
-              Aggregator on Sui.
+              Leverage Lending.
             </span>
           </h1>
 
           <p className="text-lg md:text-xl text-zinc-400 max-w-lg leading-relaxed">
-            <strong>Flash Loan + PTB</strong> powered one-click leverage positions. Compare rates across Suilend, Navi, and Scallop to find the optimal route automatically.
+            The <strong>DeFi Saver for Sui</strong>. Flash Loan + PTB powered leverage positions across Suilend, Navi, and Scallop — optimal route, one transaction.
           </p>
 
           <div className="flex flex-col sm:flex-row gap-4 pt-4">
-            <a href="https://defi-dash-curg.vercel.app/strategy" target="_blank" rel="noopener noreferrer">
+            <a href="https://defidash-frontend.vercel.app/" target="_blank" rel="noopener noreferrer">
               <Button size="lg" className="text-base px-8 h-12">
-                Launch Dashboard <ArrowRight className="ml-2 w-4 h-4" />
+                Launch App <ArrowRight className="ml-2 w-4 h-4" />
               </Button>
             </a>
-            <Button variant="outline" size="lg" className="text-base px-8 h-12 bg-transparent">
-              View SDK Docs
-            </Button>
+            <a href="https://github.com/curg-13" target="_blank" rel="noopener noreferrer">
+              <Button variant="outline" size="lg" className="text-base px-8 h-12 bg-transparent">
+                View SDK
+              </Button>
+            </a>
           </div>
         </div>
 
@@ -50,23 +52,27 @@ export const Hero: React.FC = () => {
                 </div>
                 <div className="space-y-4">
                     <div className="flex justify-between items-center text-xs text-zinc-500 uppercase font-mono mb-2">
-                      <span>Transaction Preview</span>
-                      <span className="text-green-500">Atomic PTB</span>
+                      <span>Single Atomic PTB</span>
+                      <span className="text-green-500">1 Transaction</span>
                     </div>
                     <div className="h-10 w-full bg-zinc-800/30 border border-zinc-800 rounded flex items-center px-4 justify-between">
                         <span className="text-xs text-zinc-400">1. Flash Loan</span>
-                        <span className="text-xs text-zinc-300 font-mono">Scallop</span>
+                        <span className="text-xs text-zinc-300 font-mono">Scallop / Navi</span>
                     </div>
                     <div className="h-10 w-full bg-zinc-800/30 border border-zinc-800 rounded flex items-center px-4 justify-between">
-                        <span className="text-xs text-zinc-400">2. Swap Aggregator</span>
-                        <span className="text-xs text-zinc-300 font-mono">7k Protocol</span>
+                        <span className="text-xs text-zinc-400">2. Swap</span>
+                        <span className="text-xs text-zinc-300 font-mono">7k Aggregator</span>
                     </div>
                     <div className="h-10 w-full bg-zinc-800/30 border border-zinc-800 rounded flex items-center px-4 justify-between">
                         <span className="text-xs text-zinc-400">3. Deposit & Borrow</span>
-                        <span className="text-xs text-zinc-300 font-mono">Navi / Suilend</span>
+                        <span className="text-xs text-zinc-300 font-mono">Suilend / Navi / Scallop</span>
+                    </div>
+                    <div className="h-10 w-full bg-zinc-800/30 border border-zinc-800 rounded flex items-center px-4 justify-between">
+                        <span className="text-xs text-zinc-400">4. Repay Flash Loan</span>
+                        <span className="text-xs text-green-400 font-mono">Done</span>
                     </div>
                     <div className="h-12 w-full bg-white text-black rounded font-bold flex items-center justify-center text-sm mt-4 hover:bg-zinc-200 cursor-pointer transition-colors">
-                        Execute Strategy
+                        Execute Leverage
                     </div>
                 </div>
             </div>

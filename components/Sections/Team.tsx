@@ -44,7 +44,7 @@ export const Team: React.FC = () => {
       <div className="max-w-7xl mx-auto px-6">
         <div className="flex flex-col md:flex-row justify-between items-end mb-16 border-b border-zinc-800 pb-8">
             <div>
-                <h2 className="text-4xl font-bold text-white mb-2">Team CURG'13</h2>
+                <h2 className="text-4xl font-bold text-white mb-2">DefiDash Team</h2>
                 <p className="text-zinc-500">Building the future of finance on Sui.</p>
             </div>
             <div className="mt-4 md:mt-0">
