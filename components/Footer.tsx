@@ -9,7 +9,7 @@ export const Footer: React.FC = () => (
         <span className="font-bold text-zinc-200">DefiDash Team</span> © {new Date().getFullYear()}. All rights reserved.
       </div>
       <div className="flex items-center space-x-6">
-        <a href="https://github.com/curg-13" target="_blank" rel="noopener noreferrer" className="hover:text-zinc-200 transition-colors flex items-center gap-1.5">
+        <a href="https://github.com/defidashteam" target="_blank" rel="noopener noreferrer" className="hover:text-zinc-200 transition-colors flex items-center gap-1.5">
           <Github className="w-4 h-4" />
           Github
         </a>

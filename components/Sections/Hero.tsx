@@ -29,7 +29,7 @@ export const Hero: React.FC = () => {
                 Launch App <ArrowRight className="ml-2 w-4 h-4" />
               </Button>
             </a>
-            <a href="https://github.com/curg-13" target="_blank" rel="noopener noreferrer">
+            <a href="https://github.com/defidashteam" target="_blank" rel="noopener noreferrer">
               <Button variant="outline" size="lg" className="text-base px-8 h-12 bg-transparent">
                 View SDK
               </Button>
